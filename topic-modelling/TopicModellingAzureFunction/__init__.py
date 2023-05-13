@@ -24,6 +24,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     if req_body:
         try:
             file_url = req_body.get('values')[0]["data"]["url"]
+            recordId = req_body.get('values')[0]["recordId"]
         except:
             file_url = None
             result = json.dumps("")
@@ -32,7 +33,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
             full_text = extract_pdf_by_url(file_url)
             segments = split_text_to_segments(full_text)
             key_topics = key_topic_extraction_multiple_segments(segments)
-            result = compose_response(key_topics)
+            result = compose_response(key_topics, recordId)
         
         return func.HttpResponse(result, mimetype="application/json")
     
@@ -181,11 +182,11 @@ def key_topic_extraction_multiple_segments(segments):
 
     return top_8_topic_list
 
-def compose_response(key_topics):
+def compose_response(key_topics, recordId):
     result = {
         "values": [
             {
-                "recordId": "1",
+                "recordId": recordId,
                 "data": {
                     "keyTopics": key_topics
                 }
