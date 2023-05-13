@@ -31,7 +31,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
 
         if file_url:
             full_text = extract_pdf_by_url(file_url)
-            segments = split_text_to_segments(full_text)
+            segments = split_text_to_segments(full_text, file_url)
             key_topics = key_topic_extraction_multiple_segments(segments)
             result = compose_response(key_topics, recordId)
         
@@ -61,7 +61,7 @@ def extract_pdf_by_url(url):
 
     return full_text_cleaned
 
-def split_text_to_segments(text):
+def split_text_to_segments(text, file_url=None):
     """
     Split text into segments of 2900 words each (due to OpenAI token limit)
     """
@@ -74,9 +74,17 @@ def split_text_to_segments(text):
         words = sentence.split()  # Split sentence into words
         total_words_in_segment += len(words)
 
-        if total_words_in_segment > 2900:
-            segments.append([])
-            total_words_in_segment = len(words)
+        if file_url:
+            #if file_url contains the word 'financial', split into segments of 1900 words each 
+            #this is because of much numbers, which are counted as words, taking up more tokens
+            if file_url.find("financial") != -1:
+                if total_words_in_segment > 1000:
+                    segments.append([])
+                    total_words_in_segment = len(words)
+            else:
+                if total_words_in_segment > 2900:
+                    segments.append([])
+                    total_words_in_segment = len(words)
 
         segments[-1].append(sentence)
 
@@ -106,12 +114,19 @@ def key_topic_extraction_one_segment(text):
         )
     except openai.error.RateLimitError as e:
         wait_and_retry_if_ratelimit_error(e)
-        response = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo", 
-            messages = [{"role":"user", "content": prompt}],
-            max_tokens=100,
-            temperature=0.9
-        )
+        try:
+            response = openai.ChatCompletion.create(
+                model="gpt-3.5-turbo", 
+                messages = [{"role":"user", "content": prompt}],
+                max_tokens=100,
+                temperature=0.9
+            )
+        except Exception as e:
+            print(f"Error: {e}")
+            return []
+    except openai.error.InvalidRequestError as e:
+        print(f"Error: {e}")
+        return []
 
     topic_list_string = response["choices"][0]["message"]["content"]
     print(f"GPT Output: {topic_list_string}")
@@ -167,13 +182,20 @@ def key_topic_extraction_multiple_segments(segments):
             temperature=0.9
         )
     except openai.error.RateLimitError as e:
-        wait_and_retry_if_ratelimit_error(e)
-        response = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo", 
-            messages = [{"role":"user", "content": prompt}],
-            max_tokens=100,
-            temperature=0.3
-        )
+        try:
+            wait_and_retry_if_ratelimit_error(e)
+            response = openai.ChatCompletion.create(
+                model="gpt-3.5-turbo", 
+                messages = [{"role":"user", "content": prompt}],
+                max_tokens=100,
+                temperature=0.3
+            )
+        except Exception as e:
+            print(f"Error: {e}")
+            return combined_topic_list
+    except openai.error.InvalidRequestError as e:
+        print(f"Error: {e}")
+        return combined_topic_list
 
     top_8_topic_list_string = response["choices"][0]["message"]["content"]
 
