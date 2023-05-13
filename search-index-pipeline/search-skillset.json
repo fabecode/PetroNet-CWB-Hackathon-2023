@@ -1,0 +1,199 @@
+{
+  "@odata.context": "https://cwb-cognitive-search-service.search.windows.net/$metadata#skillsets/$entity",
+  "@odata.etag": "\"0x8DB535FB9815E34\"",
+  "name": "cwb-petronas-skillset",
+  "description": "Skillset created from the portal. skillsetName: cwb-petronas-skillset; contentField: merged_content; enrichmentGranularity: pages; knowledgeStoreStorageAccount: ;",
+  "skills": [
+    {
+      "@odata.type": "#Microsoft.Skills.Text.SplitSkill",
+      "name": "#1",
+      "description": null,
+      "context": "/document/merged_content",
+      "defaultLanguageCode": "en",
+      "textSplitMode": "pages",
+      "maximumPageLength": 5000,
+      "inputs": [
+        {
+          "name": "text",
+          "source": "/document/merged_content"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "textItems",
+          "targetName": "pages"
+        }
+      ]
+    },
+    {
+      "@odata.type": "#Microsoft.Skills.Text.V3.EntityRecognitionSkill",
+      "name": "#2",
+      "description": null,
+      "context": "/document/merged_content/pages/*",
+      "categories": [
+        "Product",
+        "PhoneNumber",
+        "Person",
+        "Quantity",
+        "Organization",
+        "IPAddress",
+        "URL",
+        "Email",
+        "Event",
+        "Skill",
+        "Location",
+        "PersonType",
+        "Address",
+        "DateTime"
+      ],
+      "defaultLanguageCode": "en",
+      "minimumPrecision": null,
+      "modelVersion": null,
+      "inputs": [
+        {
+          "name": "text",
+          "source": "/document/merged_content/pages/*"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "organizations",
+          "targetName": "organizations"
+        },
+        {
+          "name": "locations",
+          "targetName": "locations"
+        }
+      ]
+    },
+    {
+      "@odata.type": "#Microsoft.Skills.Text.KeyPhraseExtractionSkill",
+      "name": "#3",
+      "description": null,
+      "context": "/document/merged_content/pages/*",
+      "defaultLanguageCode": "en",
+      "maxKeyPhraseCount": null,
+      "modelVersion": null,
+      "inputs": [
+        {
+          "name": "text",
+          "source": "/document/merged_content/pages/*"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "keyPhrases",
+          "targetName": "keyphrases"
+        }
+      ]
+    },
+    {
+      "@odata.type": "#Microsoft.Skills.Text.MergeSkill",
+      "name": "#4",
+      "description": null,
+      "context": "/document",
+      "insertPreTag": " ",
+      "insertPostTag": " ",
+      "inputs": [
+        {
+          "name": "text",
+          "source": "/document/content"
+        },
+        {
+          "name": "itemsToInsert",
+          "source": "/document/normalized_images/*/text"
+        },
+        {
+          "name": "offsets",
+          "source": "/document/normalized_images/*/contentOffset"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "mergedText",
+          "targetName": "merged_content"
+        }
+      ]
+    },
+    {
+      "@odata.type": "#Microsoft.Skills.Vision.OcrSkill",
+      "name": "#5",
+      "description": null,
+      "context": "/document/normalized_images/*",
+      "textExtractionAlgorithm": null,
+      "lineEnding": "Space",
+      "defaultLanguageCode": "en",
+      "detectOrientation": true,
+      "inputs": [
+        {
+          "name": "image",
+          "source": "/document/normalized_images/*"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "targetName": "text"
+        },
+        {
+          "name": "layoutText",
+          "targetName": "layoutText"
+        }
+      ]
+    },
+    {
+      "@odata.type": "#Microsoft.Skills.Vision.ImageAnalysisSkill",
+      "name": "#6",
+      "description": null,
+      "context": "/document/normalized_images/*",
+      "defaultLanguageCode": "en",
+      "visualFeatures": [
+        "tags"
+      ],
+      "details": [],
+      "inputs": [
+        {
+          "name": "image",
+          "source": "/document/normalized_images/*"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "tags",
+          "targetName": "imageTags"
+        }
+      ]
+    },
+    {
+      "@odata.type": "#Microsoft.Skills.Custom.WebApiSkill",
+      "name": "topic-modelling",
+      "description": "A custom skill that takes in the pdf url and applies topic modelling powered by OpenAI GPT on each document to identify top topics",
+      "context": "/document",
+      "uri": "https://cwbtopicmodellingfunctionapp.azurewebsites.net/api/TopicModellingAzureFunction?code=16GR4DRAybrjRslR_VwWCnrOHS1OEEK15butn8uGLACkAzFuiXGgog==",
+      "httpMethod": "POST",
+      "timeout": "PT1M30S",
+      "batchSize": 1,
+      "degreeOfParallelism": null,
+      "inputs": [
+        {
+          "name": "url",
+          "source": "/document/url"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "keyTopics",
+          "targetName": "keyTopics"
+        }
+      ],
+      "httpHeaders": {}
+    }
+  ],
+  "cognitiveServices": {
+    "@odata.type": "#Microsoft.Azure.Search.CognitiveServicesByKey",
+    "description": "/subscriptions/8ead1fa1-8b2c-4730-8014-f9f20bda8426/resourceGroups/cog-search-cwb-resource/providers/Microsoft.CognitiveServices/accounts/cog-service-cwb",
+    "key": "ea00324f88274963899580df56ee10f7"
+  },
+  "knowledgeStore": null,
+  "encryptionKey": null
+}

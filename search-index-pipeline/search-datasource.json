@@ -1,0 +1,19 @@
+{
+    "@odata.context": "https://cwb-cognitive-search-service.search.windows.net/$metadata#datasources/$entity",
+    "@odata.etag": "\"0x8DB5286EE68F233\"",
+    "name": "petronas-reports-blobstorage",
+    "description": null,
+    "type": "azureblob",
+    "subtype": null,
+    "credentials": {
+      "connectionString": "DefaultEndpointsProtocol=https;AccountName=cwbdocstorage;AccountKey=..."
+    },
+    "container": {
+      "name": "petronas-reports",
+      "query": null
+    },
+    "dataChangeDetectionPolicy": null,
+    "dataDeletionDetectionPolicy": null,
+    "encryptionKey": null,
+    "identity": null
+  }

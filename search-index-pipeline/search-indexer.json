@@ -1,0 +1,73 @@
+{
+  "@odata.context": "https://cwb-cognitive-search-service.search.windows.net/$metadata#indexers/$entity",
+  "@odata.etag": "\"0x8DB539799D06DF7\"",
+  "name": "cwb-petronas-indexer",
+  "description": "",
+  "dataSourceName": "petronas-reports-blobstorage",
+  "skillsetName": "cwb-petronas-skillset",
+  "targetIndexName": "cwb-petronas-index",
+  "disabled": null,
+  "schedule": null,
+  "parameters": {
+    "batchSize": null,
+    "maxFailedItems": 0,
+    "maxFailedItemsPerBatch": 0,
+    "base64EncodeKeys": false,
+    "configuration": {
+      "dataToExtract": "contentAndMetadata",
+      "parsingMode": "default",
+      "imageAction": "generateNormalizedImages"
+    }
+  },
+  "fieldMappings": [
+    {
+      "sourceFieldName": "metadata_storage_path",
+      "targetFieldName": "metadata_storage_path",
+      "mappingFunction": {
+        "name": "base64Encode",
+        "parameters": null
+      }
+    },
+    {
+      "sourceFieldName": "metadata_storage_path",
+      "targetFieldName": "url",
+      "mappingFunction": null
+    }
+  ],
+  "outputFieldMappings": [
+    {
+      "sourceFieldName": "/document/merged_content/pages/*/organizations/*",
+      "targetFieldName": "organizations"
+    },
+    {
+      "sourceFieldName": "/document/merged_content/pages/*/locations/*",
+      "targetFieldName": "locations"
+    },
+    {
+      "sourceFieldName": "/document/merged_content/pages/*/keyphrases/*",
+      "targetFieldName": "keyphrases"
+    },
+    {
+      "sourceFieldName": "/document/merged_content",
+      "targetFieldName": "merged_content"
+    },
+    {
+      "sourceFieldName": "/document/normalized_images/*/text",
+      "targetFieldName": "text"
+    },
+    {
+      "sourceFieldName": "/document/normalized_images/*/layoutText",
+      "targetFieldName": "layoutText"
+    },
+    {
+      "sourceFieldName": "/document/normalized_images/*/imageTags/*/name",
+      "targetFieldName": "imageTags"
+    },
+    {
+      "sourceFieldName": "/document/keyTopics",
+      "targetFieldName": "keyTopics"
+    }
+  ],
+  "cache": null,
+  "encryptionKey": null
+}
