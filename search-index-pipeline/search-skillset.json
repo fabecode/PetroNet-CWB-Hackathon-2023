@@ -1,8 +1,6 @@
 {
-  "@odata.context": "https://cwb-cognitive-search-service.search.windows.net/$metadata#skillsets/$entity",
-  "@odata.etag": "\"0x8DB535FB9815E34\"",
-  "name": "cwb-petronas-skillset",
-  "description": "Skillset created from the portal. skillsetName: cwb-petronas-skillset; contentField: merged_content; enrichmentGranularity: pages; knowledgeStoreStorageAccount: ;",
+  "name": "cwb-petronas-final-skillset",
+  "description": "Code without barriers Petronas final skillset",
   "skills": [
     {
       "@odata.type": "#Microsoft.Skills.Text.SplitSkill",
@@ -169,9 +167,9 @@
       "name": "topic-modelling",
       "description": "A custom skill that takes in the pdf url and applies topic modelling powered by OpenAI GPT on each document to identify top topics",
       "context": "/document",
-      "uri": "https://cwbtopicmodellingfunctionapp.azurewebsites.net/api/TopicModellingAzureFunction?code=16GR4DRAybrjRslR_VwWCnrOHS1OEEK15butn8uGLACkAzFuiXGgog==",
+      "uri": "<Your Azure Function URL>",
       "httpMethod": "POST",
-      "timeout": "PT1M30S",
+      "timeout": "PT1M150S",
       "batchSize": 1,
       "degreeOfParallelism": null,
       "inputs": [
@@ -189,11 +187,6 @@
       "httpHeaders": {}
     }
   ],
-  "cognitiveServices": {
-    "@odata.type": "#Microsoft.Azure.Search.CognitiveServicesByKey",
-    "description": "/subscriptions/8ead1fa1-8b2c-4730-8014-f9f20bda8426/resourceGroups/cog-search-cwb-resource/providers/Microsoft.CognitiveServices/accounts/cog-service-cwb",
-    "key": "ea00324f88274963899580df56ee10f7"
-  },
   "knowledgeStore": null,
   "encryptionKey": null
 }

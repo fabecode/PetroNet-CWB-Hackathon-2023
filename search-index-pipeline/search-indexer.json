@@ -1,11 +1,9 @@
 {
-  "@odata.context": "https://cwb-cognitive-search-service.search.windows.net/$metadata#indexers/$entity",
-  "@odata.etag": "\"0x8DB539799D06DF7\"",
-  "name": "cwb-petronas-indexer",
+  "name": "cwb-petronas-final-indexer",
   "description": "",
-  "dataSourceName": "petronas-reports-blobstorage",
-  "skillsetName": "cwb-petronas-skillset",
-  "targetIndexName": "cwb-petronas-index",
+  "dataSourceName": "cwb-petronas-final-blobstorage",
+  "skillsetName": "cwb-petronas-final-skillset",
+  "targetIndexName": "cwb-petronas-final-index",
   "disabled": null,
   "schedule": null,
   "parameters": {
@@ -67,7 +65,5 @@
       "sourceFieldName": "/document/keyTopics",
       "targetFieldName": "keyTopics"
     }
-  ],
-  "cache": null,
-  "encryptionKey": null
+  ]
 }
