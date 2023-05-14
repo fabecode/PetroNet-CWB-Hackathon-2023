@@ -173,7 +173,7 @@ def key_topic_extraction_multiple_segments(segments):
 
     print("combined_topic_list: ", combined_topic_list)
 
-    prompt = f"Merge semantically similar phrases and output the top 8 most distinct topics that best encapsulates the meaning of all words below. Your response should only return a python list e.g. ['Innovation',  'Financial Performance',...]. \n {combined_topic_list} \n The 8 most distinct topics, in strictly a Python list format is:"
+    prompt = f"Merge semantically similar phrases and output the top 8 most distinct topics that best encapsulates the meaning of all words below. Your response should only return a python list e.g. ['Innovation',  'Financial Performance',...]. \n {combined_topic_list} \n The 8 most distinct topics, in strictly a Python list format that strips off any leading and trailing spaces or punctuation is:"
 
     try:
         response = openai.ChatCompletion.create(
