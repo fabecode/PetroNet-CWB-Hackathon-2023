@@ -1,5 +1,6 @@
 {
   "name": "cwb-petronas-final-index",
+  "defaultScoringProfile": "keyTopicsBoostProfile",
   "fields": [
     {
       "name": "content",
@@ -280,6 +281,18 @@
       "searchAnalyzer": null,
       "analyzer": "standard.lucene",
       "synonymMaps": []
+    }
+  ],
+  "scoringProfiles": [
+    {
+      "name": "keyTopicsBoostProfile",
+      "functionAggregation": "sum",
+      "text": {
+        "weights": {
+          "keyTopics": 20
+        }
+      },
+      "functions": []
     }
   ]
 }
