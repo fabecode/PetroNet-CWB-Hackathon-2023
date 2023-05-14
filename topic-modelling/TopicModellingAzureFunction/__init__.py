@@ -63,7 +63,7 @@ def extract_pdf_by_url(url):
 
 def split_text_to_segments(text, file_url=None):
     """
-    Split text into segments of 2900 words each (due to OpenAI token limit)
+    Split text into segments of 2900 (or 1000) words each (due to OpenAI token limit)
     """
     segments = [[]]
     total_words_in_segment = 0
@@ -81,6 +81,7 @@ def split_text_to_segments(text, file_url=None):
                 if total_words_in_segment > 1000:
                     segments.append([])
                     total_words_in_segment = len(words)
+            #otherwise, split into segments of 2900 words each
             else:
                 if total_words_in_segment > 2900:
                     segments.append([])
@@ -104,13 +105,13 @@ def key_topic_extraction_one_segment(text):
     """
     Extract key topics from text
     """
-    prompt = f"Summarise up to 5 key topics in the following given text, with each topic being 1-3 words long. Exclude entities. Output topics into a Python list. Example output: ['Innovation', 'Financial Performance',...]. \n {text} Please remember you must output topics into a Python list."
+    prompt = f"Summarise up to 5 key topics in the following given text, with each topic being 1-3 words long. Exclude entities. Output topics into a Python list. Example output: ['Innovation', 'Financial Performance',...]. \n {text}\n The topics generated, in strictly a Python list format is:"
     try:
         response = openai.ChatCompletion.create(
             model="gpt-3.5-turbo", 
             messages = [{"role":"user", "content": prompt}],
             max_tokens=100,
-            temperature=0.9
+            temperature=0.7
         )
     except openai.error.RateLimitError as e:
         wait_and_retry_if_ratelimit_error(e)
@@ -119,7 +120,7 @@ def key_topic_extraction_one_segment(text):
                 model="gpt-3.5-turbo", 
                 messages = [{"role":"user", "content": prompt}],
                 max_tokens=100,
-                temperature=0.9
+                temperature=0.7
             )
         except Exception as e:
             print(f"Error: {e}")
@@ -172,14 +173,14 @@ def key_topic_extraction_multiple_segments(segments):
 
     print("combined_topic_list: ", combined_topic_list)
 
-    prompt = f"Merge semantically similar phrases and output the top 8 most distinct topics that best encapsulates the meaning of all words below. Your response should only return a python list e.g. ['Innovation',  'Financial Performance',...] and nothing else. \n {combined_topic_list}"
+    prompt = f"Merge semantically similar phrases and output the top 8 most distinct topics that best encapsulates the meaning of all words below. Your response should only return a python list e.g. ['Innovation',  'Financial Performance',...]. \n {combined_topic_list} \n The 8 most distinct topics, in strictly a Python list format is:"
 
     try:
         response = openai.ChatCompletion.create(
             model="gpt-3.5-turbo", 
             messages = [{"role":"user", "content": prompt}],
             max_tokens=100,
-            temperature=0.9
+            temperature=0.7
         )
     except openai.error.RateLimitError as e:
         try:
@@ -188,7 +189,7 @@ def key_topic_extraction_multiple_segments(segments):
                 model="gpt-3.5-turbo", 
                 messages = [{"role":"user", "content": prompt}],
                 max_tokens=100,
-                temperature=0.3
+                temperature=0.7
             )
         except Exception as e:
             print(f"Error: {e}")
