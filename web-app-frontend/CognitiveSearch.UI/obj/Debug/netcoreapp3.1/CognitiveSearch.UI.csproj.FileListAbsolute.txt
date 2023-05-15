@@ -1,0 +1,112 @@
+C:\Fabrianne\GitHub\azure-search-knowledge-mining\02 - Web UI Template\CognitiveSearch.UI\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Fabrianne\GitHub\azure-search-knowledge-mining\02 - Web UI Template\CognitiveSearch.UI\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Fabrianne\GitHub\azure-search-knowledge-mining\02 - Web UI Template\CognitiveSearch.UI\bin\Debug\netcoreapp3.1\bundleconfig.json
+C:\Fabrianne\GitHub\azure-search-knowledge-mining\02 - Web UI Template\CognitiveSearch.UI\bin\Debug\netcoreapp3.1\CognitiveSearch.UI.exe
+C:\Fabrianne\GitHub\azure-search-knowledge-mining\02 - Web UI Template\CognitiveSearch.UI\bin\Debug\netcoreapp3.1\CognitiveSearch.UI.deps.json
+C:\Fabrianne\GitHub\azure-search-knowledge-mining\02 - Web UI Template\CognitiveSearch.UI\bin\Debug\netcoreapp3.1\CognitiveSearch.UI.runtimeconfig.json
+C:\Fabrianne\GitHub\azure-search-knowledge-mining\02 - Web UI Template\CognitiveSearch.UI\bin\Debug\netcoreapp3.1\CognitiveSearch.UI.runtimeconfig.dev.json
+C:\Fabrianne\GitHub\azure-search-knowledge-mining\02 - Web UI Template\CognitiveSearch.UI\bin\Debug\netcoreapp3.1\CognitiveSearch.UI.dll
+C:\Fabrianne\GitHub\azure-search-knowledge-mining\02 - Web UI Template\CognitiveSearch.UI\bin\Debug\netcoreapp3.1\CognitiveSearch.UI.pdb
+C:\Fabrianne\GitHub\azure-search-knowledge-mining\02 - Web UI Template\CognitiveSearch.UI\bin\Debug\netcoreapp3.1\CognitiveSearch.UI.Views.dll
+C:\Fabrianne\GitHub\azure-search-knowledge-mining\02 - Web UI Template\CognitiveSearch.UI\bin\Debug\netcoreapp3.1\CognitiveSearch.UI.Views.pdb
+C:\Fabrianne\GitHub\azure-search-knowledge-mining\02 - Web UI Template\CognitiveSearch.UI\bin\Debug\netcoreapp3.1\Azure.Core.dll
+C:\Fabrianne\GitHub\azure-search-knowledge-mining\02 - Web UI Template\CognitiveSearch.UI\bin\Debug\netcoreapp3.1\Azure.Search.Documents.dll
+C:\Fabrianne\GitHub\azure-search-knowledge-mining\02 - Web UI Template\CognitiveSearch.UI\bin\Debug\netcoreapp3.1\Azure.Storage.Blobs.dll
+C:\Fabrianne\GitHub\azure-search-knowledge-mining\02 - Web UI Template\CognitiveSearch.UI\bin\Debug\netcoreapp3.1\Azure.Storage.Common.dll
+C:\Fabrianne\GitHub\azure-search-knowledge-mining\02 - Web UI Template\CognitiveSearch.UI\bin\Debug\netcoreapp3.1\Microsoft.ApplicationInsights.dll
+C:\Fabrianne\GitHub\azure-search-knowledge-mining\02 - Web UI Template\CognitiveSearch.UI\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Fabrianne\GitHub\azure-search-knowledge-mining\02 - Web UI Template\CognitiveSearch.UI\bin\Debug\netcoreapp3.1\Microsoft.Spatial.dll
+C:\Fabrianne\GitHub\azure-search-knowledge-mining\02 - Web UI Template\CognitiveSearch.UI\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.BrowserLink.dll
+C:\Fabrianne\GitHub\azure-search-knowledge-mining\02 - Web UI Template\CognitiveSearch.UI\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Fabrianne\GitHub\azure-search-knowledge-mining\02 - Web UI Template\CognitiveSearch.UI\bin\Debug\netcoreapp3.1\System.IO.Hashing.dll
+C:\Fabrianne\GitHub\azure-search-knowledge-mining\02 - Web UI Template\CognitiveSearch.UI\bin\Debug\netcoreapp3.1\System.Memory.Data.dll
+C:\Fabrianne\GitHub\azure-search-knowledge-mining\02 - Web UI Template\CognitiveSearch.UI\bin\Debug\netcoreapp3.1\System.Text.Encodings.Web.dll
+C:\Fabrianne\GitHub\azure-search-knowledge-mining\02 - Web UI Template\CognitiveSearch.UI\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+C:\Fabrianne\GitHub\azure-search-knowledge-mining\02 - Web UI Template\CognitiveSearch.UI\bin\Debug\netcoreapp3.1\System.Threading.Channels.dll
+C:\Fabrianne\GitHub\azure-search-knowledge-mining\02 - Web UI Template\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\CognitiveSearch.UI.csproj.AssemblyReference.cache
+C:\Fabrianne\GitHub\azure-search-knowledge-mining\02 - Web UI Template\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\CognitiveSearch.UI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Fabrianne\GitHub\azure-search-knowledge-mining\02 - Web UI Template\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\CognitiveSearch.UI.AssemblyInfoInputs.cache
+C:\Fabrianne\GitHub\azure-search-knowledge-mining\02 - Web UI Template\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\CognitiveSearch.UI.AssemblyInfo.cs
+C:\Fabrianne\GitHub\azure-search-knowledge-mining\02 - Web UI Template\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\CognitiveSearch.UI.csproj.CoreCompileInputs.cache
+C:\Fabrianne\GitHub\azure-search-knowledge-mining\02 - Web UI Template\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\CognitiveSearch.UI.MvcApplicationPartsAssemblyInfo.cache
+C:\Fabrianne\GitHub\azure-search-knowledge-mining\02 - Web UI Template\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\CognitiveSearch.UI.RazorAssemblyInfo.cache
+C:\Fabrianne\GitHub\azure-search-knowledge-mining\02 - Web UI Template\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\CognitiveSearch.UI.RazorAssemblyInfo.cs
+C:\Fabrianne\GitHub\azure-search-knowledge-mining\02 - Web UI Template\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\staticwebassets\CognitiveSearch.UI.StaticWebAssets.Manifest.cache
+C:\Fabrianne\GitHub\azure-search-knowledge-mining\02 - Web UI Template\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\CognitiveSearch.UI.TagHelpers.input.cache
+C:\Fabrianne\GitHub\azure-search-knowledge-mining\02 - Web UI Template\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\CognitiveSearch.UI.TagHelpers.output.cache
+C:\Fabrianne\GitHub\azure-search-knowledge-mining\02 - Web UI Template\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\CognitiveSearch.UI.RazorCoreGenerate.cache
+C:\Fabrianne\GitHub\azure-search-knowledge-mining\02 - Web UI Template\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Customize.cshtml.g.cs
+C:\Fabrianne\GitHub\azure-search-knowledge-mining\02 - Web UI Template\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\Razor\Views\Admin\NotAvailable.cshtml.g.cs
+C:\Fabrianne\GitHub\azure-search-knowledge-mining\02 - Web UI Template\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\Razor\Views\Admin\UploadData.cshtml.g.cs
+C:\Fabrianne\GitHub\azure-search-knowledge-mining\02 - Web UI Template\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Fabrianne\GitHub\azure-search-knowledge-mining\02 - Web UI Template\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\Razor\Views\Home\Search.cshtml.g.cs
+C:\Fabrianne\GitHub\azure-search-knowledge-mining\02 - Web UI Template\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Fabrianne\GitHub\azure-search-knowledge-mining\02 - Web UI Template\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Footer.cshtml.g.cs
+C:\Fabrianne\GitHub\azure-search-knowledge-mining\02 - Web UI Template\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Header.cshtml.g.cs
+C:\Fabrianne\GitHub\azure-search-knowledge-mining\02 - Web UI Template\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Fabrianne\GitHub\azure-search-knowledge-mining\02 - Web UI Template\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Fabrianne\GitHub\azure-search-knowledge-mining\02 - Web UI Template\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Fabrianne\GitHub\azure-search-knowledge-mining\02 - Web UI Template\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Fabrianne\GitHub\azure-search-knowledge-mining\02 - Web UI Template\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\CognitiveSearch.UI.RazorTargetAssemblyInfo.cache
+C:\Fabrianne\GitHub\azure-search-knowledge-mining\02 - Web UI Template\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\CognitiveSearch.UI.RazorTargetAssemblyInfo.cs
+C:\Fabrianne\GitHub\azure-search-knowledge-mining\02 - Web UI Template\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\CognitiveSearch.UI.Views.pdb
+C:\Fabrianne\GitHub\azure-search-knowledge-mining\02 - Web UI Template\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\CognitiveSearch.UI.csproj.CopyComplete
+C:\Fabrianne\GitHub\azure-search-knowledge-mining\02 - Web UI Template\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\CognitiveSearch.UI.dll
+C:\Fabrianne\GitHub\azure-search-knowledge-mining\02 - Web UI Template\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\CognitiveSearch.UI.pdb
+C:\Fabrianne\GitHub\azure-search-knowledge-mining\02 - Web UI Template\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\CognitiveSearch.UI.genruntimeconfig.cache
+C:\Fabrianne\GitHub\web-app-frontend\CognitiveSearch.UI\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Fabrianne\GitHub\web-app-frontend\CognitiveSearch.UI\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Fabrianne\GitHub\web-app-frontend\CognitiveSearch.UI\bin\Debug\netcoreapp3.1\bundleconfig.json
+C:\Fabrianne\GitHub\web-app-frontend\CognitiveSearch.UI\bin\Debug\netcoreapp3.1\CognitiveSearch.UI.exe
+C:\Fabrianne\GitHub\web-app-frontend\CognitiveSearch.UI\bin\Debug\netcoreapp3.1\CognitiveSearch.UI.deps.json
+C:\Fabrianne\GitHub\web-app-frontend\CognitiveSearch.UI\bin\Debug\netcoreapp3.1\CognitiveSearch.UI.runtimeconfig.json
+C:\Fabrianne\GitHub\web-app-frontend\CognitiveSearch.UI\bin\Debug\netcoreapp3.1\CognitiveSearch.UI.runtimeconfig.dev.json
+C:\Fabrianne\GitHub\web-app-frontend\CognitiveSearch.UI\bin\Debug\netcoreapp3.1\CognitiveSearch.UI.dll
+C:\Fabrianne\GitHub\web-app-frontend\CognitiveSearch.UI\bin\Debug\netcoreapp3.1\CognitiveSearch.UI.pdb
+C:\Fabrianne\GitHub\web-app-frontend\CognitiveSearch.UI\bin\Debug\netcoreapp3.1\CognitiveSearch.UI.Views.dll
+C:\Fabrianne\GitHub\web-app-frontend\CognitiveSearch.UI\bin\Debug\netcoreapp3.1\CognitiveSearch.UI.Views.pdb
+C:\Fabrianne\GitHub\web-app-frontend\CognitiveSearch.UI\bin\Debug\netcoreapp3.1\Azure.Core.dll
+C:\Fabrianne\GitHub\web-app-frontend\CognitiveSearch.UI\bin\Debug\netcoreapp3.1\Azure.Search.Documents.dll
+C:\Fabrianne\GitHub\web-app-frontend\CognitiveSearch.UI\bin\Debug\netcoreapp3.1\Azure.Storage.Blobs.dll
+C:\Fabrianne\GitHub\web-app-frontend\CognitiveSearch.UI\bin\Debug\netcoreapp3.1\Azure.Storage.Common.dll
+C:\Fabrianne\GitHub\web-app-frontend\CognitiveSearch.UI\bin\Debug\netcoreapp3.1\Microsoft.ApplicationInsights.dll
+C:\Fabrianne\GitHub\web-app-frontend\CognitiveSearch.UI\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Fabrianne\GitHub\web-app-frontend\CognitiveSearch.UI\bin\Debug\netcoreapp3.1\Microsoft.Spatial.dll
+C:\Fabrianne\GitHub\web-app-frontend\CognitiveSearch.UI\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.BrowserLink.dll
+C:\Fabrianne\GitHub\web-app-frontend\CognitiveSearch.UI\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Fabrianne\GitHub\web-app-frontend\CognitiveSearch.UI\bin\Debug\netcoreapp3.1\System.IO.Hashing.dll
+C:\Fabrianne\GitHub\web-app-frontend\CognitiveSearch.UI\bin\Debug\netcoreapp3.1\System.Memory.Data.dll
+C:\Fabrianne\GitHub\web-app-frontend\CognitiveSearch.UI\bin\Debug\netcoreapp3.1\System.Text.Encodings.Web.dll
+C:\Fabrianne\GitHub\web-app-frontend\CognitiveSearch.UI\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+C:\Fabrianne\GitHub\web-app-frontend\CognitiveSearch.UI\bin\Debug\netcoreapp3.1\System.Threading.Channels.dll
+C:\Fabrianne\GitHub\web-app-frontend\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\CognitiveSearch.UI.csproj.AssemblyReference.cache
+C:\Fabrianne\GitHub\web-app-frontend\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\CognitiveSearch.UI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Fabrianne\GitHub\web-app-frontend\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\CognitiveSearch.UI.AssemblyInfoInputs.cache
+C:\Fabrianne\GitHub\web-app-frontend\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\CognitiveSearch.UI.AssemblyInfo.cs
+C:\Fabrianne\GitHub\web-app-frontend\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\CognitiveSearch.UI.csproj.CoreCompileInputs.cache
+C:\Fabrianne\GitHub\web-app-frontend\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\CognitiveSearch.UI.MvcApplicationPartsAssemblyInfo.cache
+C:\Fabrianne\GitHub\web-app-frontend\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\CognitiveSearch.UI.RazorAssemblyInfo.cache
+C:\Fabrianne\GitHub\web-app-frontend\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\CognitiveSearch.UI.RazorAssemblyInfo.cs
+C:\Fabrianne\GitHub\web-app-frontend\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\staticwebassets\CognitiveSearch.UI.StaticWebAssets.Manifest.cache
+C:\Fabrianne\GitHub\web-app-frontend\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\CognitiveSearch.UI.TagHelpers.input.cache
+C:\Fabrianne\GitHub\web-app-frontend\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\CognitiveSearch.UI.TagHelpers.output.cache
+C:\Fabrianne\GitHub\web-app-frontend\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\CognitiveSearch.UI.RazorCoreGenerate.cache
+C:\Fabrianne\GitHub\web-app-frontend\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Customize.cshtml.g.cs
+C:\Fabrianne\GitHub\web-app-frontend\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\Razor\Views\Admin\NotAvailable.cshtml.g.cs
+C:\Fabrianne\GitHub\web-app-frontend\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\Razor\Views\Admin\UploadData.cshtml.g.cs
+C:\Fabrianne\GitHub\web-app-frontend\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Fabrianne\GitHub\web-app-frontend\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\Razor\Views\Home\Search.cshtml.g.cs
+C:\Fabrianne\GitHub\web-app-frontend\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Fabrianne\GitHub\web-app-frontend\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Footer.cshtml.g.cs
+C:\Fabrianne\GitHub\web-app-frontend\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Header.cshtml.g.cs
+C:\Fabrianne\GitHub\web-app-frontend\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Fabrianne\GitHub\web-app-frontend\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Fabrianne\GitHub\web-app-frontend\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Fabrianne\GitHub\web-app-frontend\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Fabrianne\GitHub\web-app-frontend\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\CognitiveSearch.UI.RazorTargetAssemblyInfo.cache
+C:\Fabrianne\GitHub\web-app-frontend\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\CognitiveSearch.UI.RazorTargetAssemblyInfo.cs
+C:\Fabrianne\GitHub\web-app-frontend\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\CognitiveSearch.UI.Views.pdb
+C:\Fabrianne\GitHub\web-app-frontend\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\CognitiveSearch.UI.csproj.CopyComplete
+C:\Fabrianne\GitHub\web-app-frontend\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\CognitiveSearch.UI.dll
+C:\Fabrianne\GitHub\web-app-frontend\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\CognitiveSearch.UI.pdb
+C:\Fabrianne\GitHub\web-app-frontend\CognitiveSearch.UI\obj\Debug\netcoreapp3.1\CognitiveSearch.UI.genruntimeconfig.cache
